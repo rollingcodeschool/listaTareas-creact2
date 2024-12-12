@@ -26,7 +26,7 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 
 1. **Clona este repositorio**  
    ```bash
-   git clone https://github.com/tu-repo/lista-de-tareas.git
+   git clone https://github.com/rollingcodeschool/listaTareas-creact2.git
    ```
 
 2. **Instala las dependencias**  
