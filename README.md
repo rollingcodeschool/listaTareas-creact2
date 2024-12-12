@@ -1,8 +1,79 @@
-# React + Vite
+# 📝 Lista de Tareas con React y Vite 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a nuestro proyecto de **Lista de Tareas**! 🎯 Este es un proyecto práctico creado para aprender y reforzar habilidades con **React**, **Vite**, y otras herramientas del ecosistema frontend. 🎉
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ **Agregar tareas**: Crea nuevas tareas con un formulario interactivo.  
+✅ **Eliminar tareas**: Elimina fácilmente las tareas que ya no necesitas.  
+✅ **Validaciones con React Hook Form**: Aseguramos que la información ingresada sea válida.  
+✅ **Maquetación con React-Bootstrap**: Una interfaz moderna y atractiva.  
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **React** ⚛️
+- **Vite** ⚡
+- **React Hook Form** 📋
+- **React-Bootstrap** 🎨
+
+---
+
+## 🚀 Instalación y uso
+
+Sigue estos pasos para ejecutar el proyecto en tu máquina local:
+
+1. **Clona este repositorio**  
+   ```bash
+   git clone https://github.com/tu-repo/lista-de-tareas.git
+   ```
+
+2. **Instala las dependencias**  
+   ```bash
+   npm install
+   ```
+
+3. **Ejecuta el proyecto**  
+   ```bash
+   npm run dev
+   ```
+
+4. **Abre en tu navegador**  
+   Ve a `http://localhost:5173` para ver la aplicación en acción. 🎉
+
+---
+
+## ✨ Vista previa de la aplicación
+
+🖼️ **[Capturas de pantalla opcionales o GIF de la app funcionando]**
+
+---
+
+## 📚 Aprendizajes clave
+
+Durante este proyecto, hemos aprendido:  
+- Cómo estructurar un proyecto con **Vite**.  
+- Implementar validaciones de formularios con **React Hook Form**.  
+- Crear componentes reutilizables con **React-Bootstrap**.  
+- Manejar estados y eventos en React.  
+
+---
+
+## 🧑‍💻 Autores
+
+Creado con ❤️ por:  
+- **Emilse Arias** 🌟  
+- **Francisco Tejerizo** 🚀  
+
+---
+
+## 📜 Licencia
+
+Este proyecto es de código abierto y está bajo la [Licencia MIT](LICENSE).
+
+---
+
+¡Gracias por visitar nuestro proyecto! 🌟 Si te gusta, no olvides darle una ⭐ en GitHub. 😊
+
+--- 
