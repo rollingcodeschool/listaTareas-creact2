@@ -12,9 +12,13 @@ const FormularioTarea = () => {
   const posteriorValidacion = (data)=>{
     //... operador spread
     //evitar tareas duplicadas
-    
-    setListaTareas([...listaTareas,data.tarea]);
-    reset();
+  
+    if(listaTareas.some((tarea)=> tarea === data.tarea.trim())){
+      alert('Esta tarea ya existe')
+    }else{
+      setListaTareas([...listaTareas,data.tarea]);
+      reset();
+    }
   }
 
 
