@@ -3,20 +3,35 @@ import { Form } from "react-bootstrap";
 import { PlusCircle } from "react-bootstrap-icons";
 import ListaTareas from './ListaTareas'
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 
 const FormularioTarea = () => {
-  const {register, handleSubmit,  formState: { errors }} = useForm();
+  const {register, handleSubmit,  formState: { errors }, reset} = useForm();
+  const [listaTareas, setListaTareas] = useState([])
 
   const posteriorValidacion = (data)=>{
-    console.log(data)
+    //... operador spread
+    //evitar tareas duplicadas
+    
+    setListaTareas([...listaTareas,data.tarea]);
+    reset();
   }
+
 
     return (
         <section className="mb-4">
           <Form onSubmit={handleSubmit(posteriorValidacion)} className="container d-flex">
             <Form.Group controlId="formTarea" className="w-100">
               <Form.Control type="text" placeholder="Ingrese una tarea" {...register("tarea",{
-                required: 'La tarea es un dato obligatorio'
+                required: 'La tarea es un dato obligatorio',
+                minLength:{
+                  value:3,
+                  message: 'La tarea debe tener 3 caracteres como minimo'
+                },
+                maxLength:{
+                  value:25,
+                  message: 'La tarea debe tener como maximo 25 caracteres'
+                }
               })}/>
               <Form.Text className="text-danger">{errors.tarea?.message}</Form.Text>
             </Form.Group>
