@@ -46,7 +46,7 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 
 ## ✨ Vista previa de la aplicación
 
-🖼️ **[Capturas de pantalla opcionales o GIF de la app funcionando]**
+![image](https://github.com/user-attachments/assets/7d95ff82-90d9-4866-9de1-3af6c758c1fc)
 
 ---
 
@@ -62,7 +62,7 @@ Durante este proyecto, hemos aprendido:
 
 ## 🧑‍💻 Autores
 
-Creado con ❤️ por:  
+Creado por:  
 - **Emilse Arias** 🌟  
 - **Francisco Tejerizo** 🚀  
 
