@@ -3,11 +3,17 @@ import { Form } from "react-bootstrap";
 import { PlusCircle } from "react-bootstrap-icons";
 import ListaTareas from './ListaTareas'
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const FormularioTarea = () => {
   const {register, handleSubmit,  formState: { errors }, reset} = useForm();
-  const [listaTareas, setListaTareas] = useState([])
+  const tareasLocalstorage = JSON.parse(localStorage.getItem('listaTareasKey')) || []  
+  const [listaTareas, setListaTareas] = useState(tareasLocalstorage)
+
+  useEffect(()=>{
+    console.log('Estoy dentro de useEffect')
+    localStorage.setItem('listaTareasKey', JSON.stringify(listaTareas))
+  }, [listaTareas])
 
   const posteriorValidacion = (data)=>{
     //... operador spread
